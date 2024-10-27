@@ -142,7 +142,7 @@ function SideBar() {
     <div class='w-[20vw] h-screen fixed top-0 px-[2vw] py-[4vh] font-font1 text-[#565656]'>
         <div class='w-full h-full flex flex-col justify-between '>
             <div class='flex flex-col space-y-[6vh] border-r-[1px]'>
-                <img src={AppLogo} class='w-5/6'/>
+                <img src={AppLogo} class='w-5/6' alt=""/>
                 <div class='flex flex-col space-y-[1vh]'>
                     <button onClick={NewCandidateFunction} class='w-full h-fit flex items-center px-[2vh] py-[1.5vh] space-x-[2vw] border-[1px] border-[#BB9753] rounded-lg'>
                         <AiOutlinePlus size='1.2rem' color='#BB9753'/>
@@ -163,7 +163,7 @@ function SideBar() {
                         Candidates.map(obj=>
                             <button onClick={()=> SavedCandidateReport(obj)} class='w-full h-fit flex flex-col space-y-[1vh] bg-[#3994FE]/20 px-[2vh] py-[1vh] rounded-lg'>
                                 <div class='flex space-x-[1vh] items-center'>
-                                    <img src={pdflogo} class='w-[1.2vw] h-fit'/>
+                                    <img src={pdflogo} class='w-[1.2vw] h-fit' alt=""/>
                                     <text class='font-medium'>{obj.name}</text>
                                 </div>
                                 <div class='flex space-x-[1vh] items-center'>
